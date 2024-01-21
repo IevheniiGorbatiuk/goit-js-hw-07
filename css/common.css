@@ -68,6 +68,12 @@ img{
 
              /*/////////// TASK - 2 ///////////*/
 
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
              /*/////////// TASK - 3 ///////////*/
             
 #name-input{
@@ -214,4 +220,9 @@ img{
 }
 #controls button:nth-child(3):hover{
   background: #FF7070;
+}
+#boxes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 16px;
 }
