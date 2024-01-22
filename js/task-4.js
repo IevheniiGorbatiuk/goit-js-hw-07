@@ -1,5 +1,4 @@
 const registerForm = document.querySelector("form");
-let values =[];
 registerForm.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
     event.preventDefault();
@@ -11,7 +10,7 @@ function handleSubmit(event) {
         return window.alert('All form fields must be filled in');
       }
 
-    values.push({userEmail : email, userPassword : password});
+    let values = ({email : email, password : password});
     console.log(values);
     form.reset();
 }

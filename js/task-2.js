@@ -27,13 +27,13 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
-const list = document.querySelector(".gallery");
+const galleryElement = document.querySelector(".gallery");
 let markup = images
 .map((image) =>
   `<li class="list-item-new">
-    <img src = "${image.url}" alt = "${image.alt}" width = 360px height = 300px/>
+    <img src="${image.url}" alt="${image.alt}" width=360px height=300px />
   </li>`)
 .join("")
-list.insertAdjacentHTML("afterbegin", markup);
+galleryElement.insertAdjacentHTML("afterbegin", markup);
 
 
